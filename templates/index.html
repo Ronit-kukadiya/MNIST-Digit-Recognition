@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digit Recognizer</title>
+    <link rel="stylesheet" href="static/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Digit Recognizer</h1>
+      <button id="theme-toggle">Dark Mode</button>
+    </header>
+
+    <main>
+      <p>Draw a number (0-9) and let the AI predict it!</p>
+      <canvas id="canvas" width="200" height="200"></canvas>
+      <div class="buttons">
+        <button onclick="clearCanvas()">Clear</button>
+        <button id="predict-btn">Predict</button>
+      </div>
+
+      <div id="result">
+        <h2>Predicted: <span id="predicted-digit">-</span></h2>
+        <ul id="confidence-list"></ul>
+      </div>
+    </main>
+
+    <footer>
+      <p>View this project on GitHub</p>
+      <a href="https://github.com/Ronit-kukadiya/MNIST-Digit-Recognition" target="_blank">
+        <button class="github-btn">GitHub Repo</button>
+      </a>
+    </footer>
+
+    <script src="static/script.js"></script>
+  </body>
+</html>
